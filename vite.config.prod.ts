@@ -26,7 +26,7 @@ export default mergeConfig(
     },
 
     build: {
-      target: 'es2018',
+      target: 'esnext', 
       outDir: 'dist',
       minify: 'esbuild',
       sourcemap: false,
