@@ -5,14 +5,24 @@
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "https://logtrack-web-shell.vercel.app" },
         { "key": "Access-Control-Allow-Methods", "value": "GET, OPTIONS" },
-        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" },
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
     },
     {
       "source": "/remoteEntry.js",
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "https://logtrack-web-shell.vercel.app" },
-        { "key": "Access-Control-Allow-Methods", "value": "GET, OPTIONS" }
+        { "key": "Access-Control-Allow-Methods", "value": "GET, OPTIONS" },
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "https://logtrack-web-shell.vercel.app" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
       ]
     }
   ]
