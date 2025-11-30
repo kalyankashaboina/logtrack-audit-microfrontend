@@ -18,7 +18,7 @@ export default mergeConfig(
       })
     ],
 
-    base: '/audit/',
+    base: '/',
 
     define: {
       __DEV__: false,
