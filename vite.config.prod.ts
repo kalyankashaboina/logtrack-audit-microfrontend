@@ -10,7 +10,7 @@ export default mergeConfig(
     plugins: [
       federation({
         name: 'audit_app',
-        filename: 'assets/remoteEntry.js',
+        filename: 'remoteEntry.js',
         exposes: {
           './AuditWidget': './src/AuditWidget.tsx'
         },
